@@ -30,3 +30,5 @@ RUN &C:\ProgramData\chocolatey\bin\choco install git ytt dos2unix golang
 RUN python -m pip install --upgrade --quiet --quiet wheel pip
 
 RUN &C:\ProgramData\chocolatey\bin\choco list --local-only
+
+RUN STATIC_DEPS=true python -m pip install -U lxml --no-cache-dir
