@@ -18,5 +18,3 @@ RUN &C:\ProgramData\chocolatey\bin\choco install python
 RUN python -m pip install --upgrade --quiet --quiet wheel pip
 
 RUN &C:\ProgramData\chocolatey\bin\choco list --local-only
-
-RUN STATIC_DEPS=true python -m pip install -U lxml --no-cache-dir
